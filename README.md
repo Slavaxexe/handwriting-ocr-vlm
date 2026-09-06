@@ -1,15 +1,15 @@
-# Handwriting OCR with Qwen2.5-VL
+# Распознавание рукописного текста с Qwen2.5-VL
 
-An experiment in extracting Russian handwritten text from photographs with the `Qwen2.5-VL-7B-Instruct` vision-language model.
+Эксперимент по извлечению русского рукописного текста из фотографий с помощью визуально-языковой модели `Qwen2.5-VL-7B-Instruct`.
 
-The model runs with 4-bit quantization, while large input images are resized automatically to reduce memory usage. Recognition quality is evaluated on six samples using character error rate (CER).
+Модель запускается с четырёхбитной квантизацией, а большие изображения автоматически уменьшаются для экономии видеопамяти. Качество распознавания оценивается на шести примерах с помощью метрики Character Error Rate (CER).
 
-## Result
+## Результат
 
-The experiment achieved a mean CER of approximately **0.173**. Clear handwriting was recognized almost perfectly, while irregular handwriting remained the main source of errors.
+Среднее значение CER составило около **0,173**. Разборчивый почерк распознавался практически без ошибок, а основным источником ошибок стал сложный и неравномерный почерк.
 
-## Stack
+## Технологии
 
-Python, PyTorch, Transformers, BitsAndBytes, Pillow, Qwen VL Utils, and CER.
+Python, PyTorch, Transformers, BitsAndBytes, Pillow, Qwen VL Utils и CER.
 
-Install `requirements.txt` and open `handwriting_ocr_vlm.ipynb` to reproduce the experiment.
+Для воспроизведения эксперимента установите зависимости из `requirements.txt` и откройте `handwriting_ocr_vlm.ipynb`.
