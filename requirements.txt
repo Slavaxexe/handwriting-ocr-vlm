@@ -1,0 +1,6 @@
+bitsandbytes
+cer
+pillow
+qwen-vl-utils
+torch
+transformers
